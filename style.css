@@ -1,0 +1,22 @@
+.body {
+  margin: 0 auto;
+  background-color: #313339;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  color: #fff;
+  width: 42em; }
+  .body .header {
+    width: 42em; }
+    .body .header .mainPageName .otherColor {
+      color: #a50b0b; }
+  .body .main {
+    width: 42em; }
+    .body .main .chatBody {
+      width: 42em;
+      height: calc(100vh - 10.875em); }
+    .body .main .chatInput .messageTextArea {
+      width: 42em;
+      height: 2.625em; }
+
+/*# sourceMappingURL=style.css.map */
