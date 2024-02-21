@@ -2,11 +2,11 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.css';
 import { Body } from './components/body/body';
 
-function App() {
+function App(props) {
   return (
     <BrowserRouter>
       <div className='app'>
-        <Body/>
+        <Body userInfo={props.userInfo}/>
         <div>
           <Routes>
             <Route/>
