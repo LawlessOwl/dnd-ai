@@ -1,0 +1,47 @@
+.body {
+  margin: 0 auto;
+  background-color: #313339;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  color: #fff;
+  width: 42em; }
+  .body .header {
+    width: 42em; }
+    .body .header .mainPageName .otherColor {
+      color: #a50b0b; }
+  .body .main {
+    width: 42em; }
+    .body .main .chatBody {
+      width: 42em;
+      height: calc(100vh - 10.875em);
+      border: 1px solid lightgray;
+      border-radius: 1%; }
+      .body .main .chatBody .userText {
+        display: flex;
+        align-items: center;
+        margin-left: 10px;
+        margin-top: 10px; }
+        .body .main .chatBody .userText .userAvatar {
+          width: 60px;
+          height: 60px;
+          border-radius: 50%; }
+        .body .main .chatBody .userText .messageBody {
+          margin-left: 10px; }
+          .body .main .chatBody .userText .messageBody .userNickName {
+            color: #a50b0b;
+            margin: 0; }
+          .body .main .chatBody .userText .messageBody .messageText {
+            margin-top: 5px;
+            border: 1px solid lightgray;
+            border-radius: 3%; }
+    .body .main .chatInput {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      width: 42em; }
+      .body .main .chatInput .messageTextArea {
+        width: 42em;
+        height: 2.625em; }
+
+/*# sourceMappingURL=style.css.map */
