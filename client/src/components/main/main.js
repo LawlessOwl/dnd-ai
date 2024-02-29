@@ -32,13 +32,21 @@ export const Main = (props) => {
     let newMessage = () => {
         let message = textMessage.current.value;
         props.addMessage(message)
+        props.updateMessageText("")
+    }
+
+    let newMessageText = props.newMessageText
+
+    let messageChange = () => {
+        let message = textMessage.current.value;
+        props.updateMessageText(message)
     }
     
     return (
         <main className={style.main}>
             <MessageItem />
           <div className={style.chatInput}>
-              <textarea name="" id="" cols="30" rows="10" placeholder="Input a message" className={style.messageTextArea} ref={ textMessage }></textarea>
+              <textarea name="" id="" cols="30" rows="10" placeholder="Input a message" onChange={messageChange} value={newMessageText} className={style.messageTextArea} ref={ textMessage } />
               <button onClick={ newMessage }>Send</button>
           </div>
         </main>

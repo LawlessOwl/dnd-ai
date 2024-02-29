@@ -9,7 +9,7 @@ export const Body = (props) => {
     return (
         <body className={style.body}>
             <Header/>
-            <Main userInfo={props.userInfo} addMessage={props.addMessage}/>
+            <Main userInfo={props.userInfo} addMessage={props.addMessage} updateMessageText={props.updateMessageText} newMessageText={props.newMessageText}/>
         </body>
     )
 }

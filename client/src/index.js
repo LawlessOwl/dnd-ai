@@ -1,9 +1,10 @@
 import './style.scss';
 import reportWebVitals from './reportWebVitals';
 import { rerenderTree } from './rerender/rerender';
+import { Data } from './data/data';
 
 
-rerenderTree()
+rerenderTree(Data)
 
 
 // If you want to start measuring performance in your app, pass a function

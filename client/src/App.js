@@ -6,7 +6,7 @@ function App(props) {
   return (
     <BrowserRouter>
       <div className='app'>
-        <Body userInfo={props.userInfo} addMessage={props.addMessage}/>
+        <Body userInfo={props.userInfo} addMessage={props.addMessage} updateMessageText={props.updateMessageText} newMessageText={props.newMessageText}/>
         <div>
           <Routes>
             <Route/>
