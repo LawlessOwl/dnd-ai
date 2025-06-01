@@ -1,7 +1,9 @@
+import styles from './styles/header.module.scss'
+
 const Header = () => {
   return (
-    <div>
-      <h1>DND AI</h1>
+    <div className={`${styles.header} header`}>
+      <h1 className={`${styles.logo} title`}>DND AI</h1>
     </div>
   )
 }

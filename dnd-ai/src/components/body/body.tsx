@@ -1,7 +1,10 @@
+import ChatWindow from "../chatWindow/chatWindow"
+import styles from './styles/body.module.scss'
+
 const Body = () => {
   return (
-    <div>
-      <h1>Body</h1>
+    <div className={styles.bodyContainer}>
+      <ChatWindow/>
     </div>
   )
 }
