@@ -1,7 +1,9 @@
+import type { MessageType } from '@/types/message'
+import MessageElement from './Message/Message'
 import styles from './styles/chatWindow.module.scss'
 
 type ChatWindowProps = {
-  messages: string[]
+  messages: MessageType[]
   inputValue: string
   onInputChange: (e: React.ChangeEvent<HTMLInputElement>) => void
   onSend: () => void
@@ -21,10 +23,14 @@ const ChatWindow = ({
       <div className={styles.chatWindowContent}>
         <div className={styles.chatWindowMessages}>
           {messages && messages.length > 0 ? (
-            messages.map((message, index) => (
-              <div key={index} className={styles.chatWindowMessage}>
-                <p className={styles.chatWindowMessageText}>{message}</p>
-              </div>
+            messages.map((message) => (
+              <MessageElement
+              key={message.id}
+              text={message.text}
+              userName={message.userName}
+              isCurrentUser={message.isCurrentUser}
+              userAvatar={message.userAvatar}
+              />
             ))
           ) : (
             <p className={styles.chatWindowMessage}>No messages yet</p>
