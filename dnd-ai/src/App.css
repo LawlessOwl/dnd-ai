@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Crimson+Text:ital,wght@0,400;0,600;1,400&family=Uncial+Antiqua&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.body {
+  display: flex;
+  font-family: 'Crimson Text', serif;
+}
+
+.title, .heading {
+  font-family: 'Cinzel', serif;
+  font-weight: 600;
+}
+
+.medieval-text {
+  font-family: 'Uncial Antiqua', cursive;
+}
+
+.body-text {
+  font-family: 'Crimson Text', serif;
+  line-height: 1.6;
+}

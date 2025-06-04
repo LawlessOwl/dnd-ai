@@ -1,0 +1,67 @@
+.message {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 16px;
+  padding: 8px;
+  border-radius: 8px;
+
+  &.messageCurrentUser {
+    flex-direction: row-reverse;
+    background-color: #f0f8ff;
+
+    .messageContent {
+      text-align: right;
+    }
+  }
+
+  &.messageOtherUser {
+    background-color: #f9f9f9;
+  }
+}
+
+.userAvatar {
+  flex-shrink: 0;
+  width: 4rem;
+  height: 4rem;
+}
+
+.userAvatarImage {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.userAvatarPlaceholder {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: #007bff;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.messageContent {
+  flex: 1;
+  min-width: 0;
+}
+
+.messageHeader {
+  margin-bottom: 4px;
+}
+
+.userName {
+  font-weight: 600;
+  font-size: 14px;
+  color: #333;
+}
+
+.messageText {
+  margin: 0;
+  line-height: 1.4;
+  word-wrap: break-word;
+}
